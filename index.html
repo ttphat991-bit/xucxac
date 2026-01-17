@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Lắc Xúc Xắc 3D</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <h2>🎲 Lắc Xúc Xắc 3D</h2>
+
+  <div class="dice-area">
+    <div class="scene"><div class="cube" id="dice1"></div></div>
+    <div class="scene"><div class="cube" id="dice2"></div></div>
+    <div class="scene"><div class="cube" id="dice3"></div></div>
+  </div>
+
+  <button onclick="rollAll()">LẮC</button>
+
+  <div class="result" id="result">Tổng: ?</div>
+  <div class="tx" id="tx">—</div>
+
+  <h3>Lịch sử</h3>
+  <div class="history" id="history"></div>
+
+  <h3>Thống kê</h3>
+  <div class="stats">
+    Tài: <span id="taiCount">0</span> (<span id="taiPercent">0</span>%) |
+    Xỉu: <span id="xiuCount">0</span> (<span id="xiuPercent">0</span>%) |
+    Tổng: <span id="totalRound">0</span>
+  </div>
+
+  <h3>Roadmap</h3>
+  <div class="roadmap" id="roadmap"></div>
+
+  <button onclick="resetData()">Reset</button>
+</div>
+
+<audio id="diceSound" src="shake.mp3" preload="auto"></audio>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
